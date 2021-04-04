@@ -90,19 +90,6 @@ r = model.fit_generator(
 print("MODEL TRAINING IS DONE-----")
 model.save('facefeatures_new_model_ver1-6.h5')
 
-# loss
-plt.plot(r.history['loss'], label='train loss')
-plt.plot(r.history['val_loss'], label='val loss')
-plt.legend()
-plt.show()
-plt.savefig('LossVal_loss')
-
-# accuracies
-plt.plot(r.history['accuracy'], label='train acc')
-plt.plot(r.history['val_accuracy'], label='val acc')
-plt.legend()
-plt.show()
-plt.savefig('AccVal_acc')
 
 
 
